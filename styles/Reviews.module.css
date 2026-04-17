@@ -1,0 +1,155 @@
+.reviews {
+  background: #f7f0e6;
+  padding: 100px 20px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a6840;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 42px;
+  color: #1c1410;
+}
+
+.sub {
+  margin-top: 10px;
+  color: #6b4e2e;
+  font-size: 14px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* Each stat block */
+.stats div {
+  padding: 10px 0;
+}
+
+/* Number */
+.stats h3 {
+  font-size: 32px;
+  color: #1c1410;
+  font-weight: 600;
+}
+
+/* Label */
+.stats p {
+  font-size: 12px;
+  color: #7a6050;
+  margin-top: 6px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(140, 100, 60, 0.2);
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  color: #3d2010;
+  margin-bottom: 12px;
+}
+
+.author {
+  font-size: 12px;
+  color: #8a6840;
+}
+
+/* CTA */
+.cta {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.btn {
+  background: #1c1410;
+  color: #f7f0e6;
+  padding: 14px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3d2010;
+}
+/* ⭐ STARS */
+.stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.starFilled {
+  color: #c48b3a;
+  font-size: 14px;
+}
+
+.starEmpty {
+  color: #ddd;
+  font-size: 14px;
+}
+
+/* CARD HOVER (premium feel) */
+.card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(140, 100, 60, 0.2);
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .stats h3 {
+    font-size: 26px;
+  }
+}

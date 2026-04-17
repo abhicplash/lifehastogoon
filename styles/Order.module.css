@@ -1,0 +1,97 @@
+.order {
+  background: #f7f0e6;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
+  color: #1c1410;
+}
+
+.sub {
+  margin-top: 10px;
+  color: #6b4e2e;
+  font-size: 14px;
+}
+
+/* GRID */
+.grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(140, 100, 60, 0.2);
+  padding: 30px 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #1c1410;
+}
+
+.card p {
+  font-size: 13px;
+  color: #7a6050;
+  margin: 10px 0 20px;
+}
+
+/* BUTTON */
+.btn {
+  background: #1c1410;
+  color: #f7f0e6;
+  padding: 12px 26px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn:hover {
+  background: #3d2010;
+}
+.logoWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  /* border: 1px solid red; */
+  /* object-fit: contain; */
+
+  /* filter: grayscale(100%); */
+  /* opacity: 0.8; */
+  transition: 0.3s;
+}
+
+.card:hover .logo {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

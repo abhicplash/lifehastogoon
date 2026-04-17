@@ -1,0 +1,59 @@
+.floating {
+  position: fixed;
+  right: 20px;
+  bottom: 0%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 999;
+}
+
+/* ICON BOX */
+.iconWrap {
+  width: 46px;border-radius: 100%;
+  height: 46px;
+  /* background: rgba(255, 255, 255, 0.6); */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(140, 100, 60, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ICON */
+.icon {
+  object-fit: contain;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.iconWrap:hover {
+  transform: translateX(-6px);
+  background: #1c1410;
+}
+
+.iconWrap:hover .icon {
+  opacity: 1;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .floating {
+    right: 10px;
+    gap: 10px;
+  }
+
+  .iconWrap {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+}
