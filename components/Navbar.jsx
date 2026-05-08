@@ -28,7 +28,7 @@ export default function Navbar() {
 
         {/* RIGHT */}
         <a
-          href="YOUR_AMAZON_LINK"
+          href="https://www.amazon.in/dp/B0GQ3GQKJT"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.cta}
