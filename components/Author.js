@@ -55,7 +55,12 @@ export default function Author() {
         <div className={styles.left}>
           <div className={styles.avatarWrap}>
             {/* <div className={styles.avatarInitials}> */}
-              <Image src={author} alt="author-image" priority className={styles.authorImage} />
+            <Image
+              src={author}
+              alt="author-image"
+              priority
+              className={styles.authorImage}
+            />
             {/* </div> */}
             <div className={styles.avatarRing} />
           </div>
@@ -72,7 +77,7 @@ export default function Author() {
           {/* Social / connect row */}
           <div className={styles.socialRow}>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/nameis_abhilash/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
@@ -81,7 +86,7 @@ export default function Author() {
             </a>
             <span className={styles.socialSep} />
             <a
-              href="https://amazon.in"
+              href="https://www.amazon.in/dp/B0GQ3GQKJT"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}

@@ -1,0 +1,10 @@
+.sampleRead {
+  background: #f7f0e6;
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}

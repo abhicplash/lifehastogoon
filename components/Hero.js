@@ -3,6 +3,7 @@
 import styles from "@/styles/Hero.module.css";
 import Image from "next/image";
 import book from "@/public/bookcover.png";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -134,12 +135,12 @@ export default function Hero() {
           </p>
 
           <div className={styles.ctaRow}>
-            <a href="" target="_blank" className={styles.btnPrimaryWrap}>
+            <Link href="/readchapter" className={styles.btnPrimaryWrap}>
               <button className={styles.btnPrimary}>
                 <span className={styles.btnLabel}>Read Chapter 1</span>
                 <span className={styles.btnIcon}>→</span>
               </button>
-            </a>
+            </Link>
             <a href="#order" className={styles.btnSecondaryWrap}>
               <button className={styles.btnPrimary}>
                 <span className={styles.btnLabel}>Get Your Copy</span>

@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "@/styles/cta.module.css";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -23,11 +24,11 @@ export default function CTA() {
 
         {/* Buttons */}
         <div className={styles.btnWrappr}>
-          <a href="YOUR_CHAPTER_LINK" target="_blank" rel="noopener noreferrer">
+          <Link href="/readchapter" rel="noopener noreferrer">
             <button className={styles.ctaButton}>
               Read Chapter 1
             </button>
-          </a>
+          </Link>
 
           <a href="#order">
             <button className={styles.ctaButton}>Get Your Copy</button>
