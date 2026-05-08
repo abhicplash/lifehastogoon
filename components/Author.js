@@ -54,9 +54,9 @@ export default function Author() {
         {/* ── LEFT — Avatar + name plate ── */}
         <div className={styles.left}>
           <div className={styles.avatarWrap}>
-            <div className={styles.avatarInitials}>
+            {/* <div className={styles.avatarInitials}> */}
               <Image src={author} alt="author-image" priority className={styles.authorImage} />
-            </div>
+            {/* </div> */}
             <div className={styles.avatarRing} />
           </div>
 
