@@ -200,6 +200,7 @@ export default function Hero() {
                 alt="Life Has To Go On — Abhilash CP"
                 className={styles.bookImg}
                 priority
+                loading="eager"
               />
               <div className={styles.bookShineLine} />
               <div className={styles.bookGroundShadow} />

@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "@/styles/globals.css";
 import "./globals.css";
+import FloatingBuy from "@/components/FloatingBuy";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
+        <FloatingBuy />
         <Footer />
       </body>
     </html>

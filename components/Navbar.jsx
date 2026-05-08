@@ -11,19 +11,25 @@ export default function Navbar() {
       <div className={styles.navContainer}>
         {/* LEFT */}
         <Link href="/" className={styles.logo}>
-          <Image src={book} alt="BookImage" className={styles.bookLogo} />
+          <Image
+            src={book}
+            alt="BookImage"
+            className={styles.bookLogo}
+            loading="eager"
+            priority
+          />
           {/* <span className={styles.logoMark}>✦</span> */}
           <div className={styles.logoText}>
             <span className={styles.logoTop}>Life Has To</span>
-            <span className={styles.logoBottom}>Go On</span>
+            <span className={styles.logoBottom}>GO ON</span>
           </div>
         </Link>
 
         {/* CENTER */}
         <nav className={styles.menu}>
-          <Link href="#reviews">Reviews</Link>
-          <Link href="#author">Author</Link>
-          <Link href="#order">Order</Link>
+          <Link href="/#reviews">Reviews</Link>
+          <Link href="/#author">Author</Link>
+          <Link href="/#order">Order</Link>
         </nav>
 
         {/* RIGHT */}
