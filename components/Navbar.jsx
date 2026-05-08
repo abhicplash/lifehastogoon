@@ -1,7 +1,9 @@
 "use client";
 
 import styles from "@/styles/Navbar.module.css";
+import Image from "next/image";
 import Link from "next/link";
+import book from "@/public/bookcover.png";
 
 export default function Navbar() {
   return (
@@ -9,7 +11,8 @@ export default function Navbar() {
       <div className={styles.navContainer}>
         {/* LEFT */}
         <Link href="/" className={styles.logo}>
-          <span className={styles.logoMark}>✦</span>
+          <Image src={book} alt="BookImage" className={styles.bookLogo} />
+          {/* <span className={styles.logoMark}>✦</span> */}
           <div className={styles.logoText}>
             <span className={styles.logoTop}>Life Has To</span>
             <span className={styles.logoBottom}>Go On</span>

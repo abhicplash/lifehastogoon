@@ -45,6 +45,10 @@
   font-size: 14px;
   box-shadow: 0 8px 18px rgba(28, 20, 16, 0.14);
 }
+.bookLogo {
+  height: 2.7rem;
+  width: 2rem;
+}
 
 .logoText {
   display: flex;
