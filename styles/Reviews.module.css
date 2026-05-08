@@ -1,155 +1,234 @@
 .reviews {
   background: #f7f0e6;
-  padding: 100px 20px;
+  padding: 110px 20px;
   font-family: "DM Sans", sans-serif;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1180px;
   margin: auto;
 }
 
 /* HEADER */
-.header {
+.topWrap {
   text-align: center;
-  margin-bottom: 60px;
+  max-width: 760px;
+  margin: 0 auto 70px;
 }
 
 .eyebrow {
   font-size: 12px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: #8a6840;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .heading {
   font-family: "Cormorant Garamond", serif;
-  font-size: 42px;
+  font-size: 56px;
+  line-height: 1;
   color: #1c1410;
 }
 
-.sub {
-  margin-top: 10px;
+.heading span {
+  display: block;
   color: #6b4e2e;
-  font-size: 14px;
+  margin-top: 8px;
+}
+
+.sub {
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6b4e2e;
 }
 
 /* STATS */
 .stats {
-  display: flex;
+  margin-top: 36px;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 60px;
-  text-align: center;
+  gap: 28px;
+  padding: 22px 34px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(140, 100, 60, 0.14);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
 }
 
-/* Each stat block */
-.stats div {
-  padding: 10px 0;
-}
-
-/* Number */
-.stats h3 {
+.statCard h3 {
   font-size: 32px;
   color: #1c1410;
-  font-weight: 600;
 }
 
-/* Label */
-.stats p {
+.statCard p {
   font-size: 12px;
-  color: #7a6050;
-  margin-top: 6px;
+  color: #8a6840;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.statDivider {
+  width: 1px;
+  height: 42px;
+  background: rgba(140, 100, 60, 0.14);
 }
 
 /* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
 /* CARD */
 .card {
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(140, 100, 60, 0.2);
-  padding: 22px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(140, 100, 60, 0.14);
+  border-radius: 18px;
+  padding: 24px;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.06);
+  transition: 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.12);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.stars span {
+  color: #c48b3a;
+  font-size: 14px;
+}
+
+.quoteIcon {
+  font-size: 44px;
+  color: rgba(196, 139, 58, 0.25);
+  line-height: 1;
 }
 
 .text {
   font-family: "Cormorant Garamond", serif;
-  font-size: 18px;
+  font-size: 22px;
+  line-height: 1.55;
   color: #3d2010;
-  margin-bottom: 12px;
+  flex: 1;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bottom {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(140, 100, 60, 0.12);
 }
 
 .author {
   font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: #8a6840;
+  font-weight: 600;
 }
 
 /* CTA */
 .cta {
-  margin-top: 60px;
   text-align: center;
+  margin-top: 70px;
 }
 
 .btn {
   background: #1c1410;
   color: #f7f0e6;
-  padding: 14px 30px;
   border: none;
+  padding: 16px 34px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
   background: #3d2010;
-}
-/* ⭐ STARS */
-.stars {
-  display: flex;
-  gap: 4px;
-  margin-bottom: 10px;
+  transform: translateY(-4px);
 }
 
-.starFilled {
-  color: #c48b3a;
-  font-size: 14px;
+/* TABLET */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading {
+    font-size: 46px;
+  }
 }
 
-.starEmpty {
-  color: #ddd;
-  font-size: 14px;
-}
-
-/* CARD HOVER (premium feel) */
-.card {
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(140, 100, 60, 0.2);
-  padding: 22px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
-}
 /* MOBILE */
 @media (max-width: 768px) {
+  .reviews {
+    padding: 90px 20px;
+  }
+
+  .heading {
+    font-size: 38px;
+  }
+
+  .stats {
+    flex-direction: column;
+    width: 100%;
+    gap: 18px;
+  }
+
+  .statDivider {
+    width: 50px;
+    height: 1px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
 
-  .stats {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  .card {
+    min-height: auto;
   }
 
-  .stats h3 {
-    font-size: 26px;
+  .text {
+    font-size: 20px;
+    -webkit-line-clamp: 6;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 18px;
   }
 }

@@ -11,9 +11,10 @@
 
 /* ICON BOX */
 .iconWrap {
-  width: 46px;border-radius: 100%;
+  width: 46px;
+  border-radius: 100%;
   height: 46px;
-  /* background: rgba(255, 255, 255, 0.6); */
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(140, 100, 60, 0.2);
   display: flex;
@@ -21,19 +22,21 @@
   justify-content: center;
   cursor: pointer;
   transition: 0.3s;
+  border: 2px solid rgb(17, 9, 0);
 }
 
 /* ICON */
 .icon {
   object-fit: contain;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   transition: 0.3s;
 }
 
 /* HOVER */
 .iconWrap:hover {
   transform: translateX(-6px);
-  background: #1c1410;
+  /* background: #1c1410; */
+  border: 2px solid rgb(17, 9, 0);
 }
 
 .iconWrap:hover .icon {
