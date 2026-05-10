@@ -1,6 +1,9 @@
 /* CTA SECTION */
 .ctaSection {
-  background: linear-gradient(180deg, #f7f0e6 0%, #efe3d4 100%);
+  /* background: linear-gradient(180deg, #f7f0e6 0%, #efe3d4 100%); */
+  background: url("/reading.png");
+  background-position: center;
+  background-size: cover;
   padding: 120px 20px;
   text-align: center;
   position: relative;
@@ -52,7 +55,7 @@
   font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #8a6840;
+  color: #c9975f;
   margin-bottom: 16px;
 }
 
@@ -62,13 +65,13 @@
   font-size: 58px;
   font-weight: 500;
   line-height: 1.05;
-  color: #1c1410;
+  color: #fac2a6;
   margin-bottom: 20px;
 }
 
 .ctaHighlight {
   display: block;
-  color: #6b4e2e;
+  color: #f3b16a;
   font-style: italic;
 }
 
@@ -76,7 +79,7 @@
 .ctaText {
   font-size: 16px;
   line-height: 1.8;
-  color: #7a6050;
+  color: #b3886d;
   max-width: 660px;
   margin: 0 auto 38px;
 }
@@ -144,7 +147,7 @@
 
 .ctaProof {
   font-size: 13px;
-  color: #7a6050;
+  color: #e6c9b7;
 }
 
 .dot {
