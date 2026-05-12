@@ -30,7 +30,7 @@ export default function CTA() {
             </button>
           </Link>
 
-          <a href="#order">
+          <a href="https://www.amazon.in/dp/B0GQ3GQKJT" target="_blank">
             <button className={styles.ctaButton}>Get Your Copy</button>
           </a>
         </div>

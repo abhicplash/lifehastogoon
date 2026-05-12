@@ -18,7 +18,30 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Life Has To Go On : Learning to Breathe Again",
   description:
-    "A deeply emotional and inspiring book by Abhilash CP about healing, resilience, friendship, and finding the strength to move forward.",
+    "For anyone who smiles in public and stares at the ceiling at night. A book about healing, friendship, and moving forward.",
+  openGraph: {
+    title: "Life Has To Go On — Abhilash CP",
+    description:
+      "For anyone who smiles in public and stares at the ceiling at night.",
+    url: "https://lifehastogoon.vercel.app",
+    siteName: "Life Has To Go On",
+    images: [
+      {
+        url: "https://lifehastogoon.vercel.app/bookcover.png",
+        width: 1200,
+        height: 630,
+        alt: "Life Has To Go On — Abhilash CP",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Life Has To Go On — Abhilash CP",
+    description:
+      "For anyone who smiles in public and stares at the ceiling at night.",
+    images: ["https://lifehastogoon.vercel.app/bookcover.png"],
+  },
 };
 
 export default function RootLayout({ children }) {

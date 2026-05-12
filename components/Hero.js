@@ -141,7 +141,7 @@ export default function Hero() {
                 <span className={styles.btnIcon}>→</span>
               </button>
             </Link>
-            <a href="#order" className={styles.btnSecondaryWrap}>
+            <a href="https://www.amazon.in/dp/B0GQ3GQKJT" target="_blank" className={styles.btnSecondaryWrap}>
               <button className={styles.btnPrimary}>
                 <span className={styles.btnLabel}>Get Your Copy</span>
                 <span className={styles.btnUnderline} />
