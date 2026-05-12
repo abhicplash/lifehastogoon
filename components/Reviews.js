@@ -98,7 +98,7 @@ export default function Reviews() {
 
         {/* CTA */}
         <div className={styles.cta}>
-          <a href="YOUR_AMAZON_LINK" target="_blank">
+          <a href="https://www.amazon.in/dp/B0GQ3GQKJT" target="_blank">
             <button className={styles.btn}>Get Your Copy</button>
           </a>
         </div>
