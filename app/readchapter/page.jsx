@@ -38,7 +38,7 @@ export default function ReadChapter() {
               <button className={styles.primaryBtn}>Start Reading</button>
             </a>
 
-            <a href="/#order">
+            <a href="https://www.amazon.in/dp/B0GQ3GQKJT" target="_blank">
               <button className={styles.secondaryBtn}>Get Full Book</button>
             </a>
           </div>
